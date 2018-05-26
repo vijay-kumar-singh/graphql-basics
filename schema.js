@@ -10,10 +10,6 @@ const { GraphQLSchema,
         GraphQLInt
     } = require('graphql')
 
-fetch('https://www.goodreads.com/author/show.xml?id=4432&key=zbSXrHnNm437G9RPHclmyg')
-.then(response => response.text())
-.then(parseXML)
-
 const AuthorType = new GraphQLObjectType({
     name:'Author',
     description: '...',
